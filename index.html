@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="A simple game where you have to find the same cards" />
+        <title>Game "Memory"</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            canvas {
+                width: 100%;
+            }
+            @font-face {
+                font-family: "KodeMomo";
+                src: url("fonts/KodeMono-VariableFont_wght.ttf");
+            }
+            .fontPreload {
+                font-family: "KodeMomo";
+                position: absolute;
+                left: -100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fontPreload">.</div>
+        <script src="js/libs/phaser.min.js"></script>
+        <script src="js/classes/LoadingBar.js"></script>
+        <script src="js/prafabs/Boom.js"></script>
+        <script src="js/prafabs/MovableObject.js"></script>
+        <script src="js/prafabs/Fire.js"></script>
+        <script src="js/prafabs/Fires.js"></script>
+        <script src="js/prafabs/Enemies.js"></script>
+        <script src="js/prafabs/Enemy.js"></script>
+        <script src="js/prafabs/Player.js"></script>
+        <script src="js/scenes/BootScene.js"></script>
+        <script src="js/scenes/PreloadScene.js"></script>
+        <script src="js/scenes/GameScene.js"></script>
+        <script src="js/scenes/StartScene.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
